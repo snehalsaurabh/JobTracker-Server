@@ -22,7 +22,6 @@ If you're looking for the **frontend repository**, you can find it here:
   - [Sample Requests](#sample-requests)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
