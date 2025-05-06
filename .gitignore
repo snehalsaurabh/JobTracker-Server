@@ -63,3 +63,6 @@ docker-compose.yml
 
 # MongoDB data directory
 /data/db
+
+# Text Files
+Codebase.txt
