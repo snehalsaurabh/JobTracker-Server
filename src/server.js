@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './config/db.js';
 import jobRoutes from './routes/jobRoutes.js';
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './docs/swagger.js';
 
 dotenv.config();
 
@@ -18,6 +20,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/jobs', jobRoutes);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
